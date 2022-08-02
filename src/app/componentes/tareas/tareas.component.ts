@@ -1,6 +1,7 @@
+import { TareaServiciosService } from './../../servicios/tarea-servicios.service';
 import { Tarea } from './../../interfaces/tarea';
 import { Component, OnInit } from '@angular/core';
-import {Tareas} from '../../simulaciones-tarea';
+
 
 @Component({
   selector: 'app-tareas',
@@ -11,11 +12,14 @@ export class TareasComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private tareaServicio:TareaServiciosService) { }
 
-  Tareas:Tarea[] =Tareas;
+  Tareas:Tarea[] =[];
 
   ngOnInit(): void {
+    this.tareaServicio.obtenerTareas().subscribe((tareas)=>{
+      this.Tareas = tareas
+    });
   }
 
 }
