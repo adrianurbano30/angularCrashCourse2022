@@ -1,0 +1,29 @@
+[33mcommit b89a66b0fce0f9788ad38c5c5d51d34ec0370fe7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Adrián Urbano <javoshine_adrian@hotmail.com>
+Date:   Tue Aug 2 19:16:21 2022 -0500
+
+    opcion de eliminar tarea a la api local y su servicio correspondiente
+
+[33mcommit 1646abe952d3e15911c4c6378c9544d04b253e1c[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Adrián Urbano <javoshine_adrian@hotmail.com>
+Date:   Tue Aug 2 17:46:54 2022 -0500
+
+    arreglo de json server comunicacion servidor local api con servicio
+
+[33mcommit ea32aea2844fa149f78e880af2cb98078bdc2abb[m
+Author: Adrián Urbano <javoshine_adrian@hotmail.com>
+Date:   Tue Aug 2 09:01:17 2022 -0500
+
+    cursor pointer y tareas destacadas
+
+[33mcommit c73b31b9ca28af9f68827d5e84046a84e06ca153[m
+Author: Adrián Urbano <javoshine_adrian@hotmail.com>
+Date:   Tue Aug 2 08:42:29 2022 -0500
+
+    angular crash course version 2022
+
+[33mcommit eae976b2d8ec700ce795ed79baaa2fe094113a3f[m
+Author: Adrián Urbano <javoshine_adrian@hotmail.com>
+Date:   Sun Jul 31 19:59:05 2022 -0500
+
+    initial commit
