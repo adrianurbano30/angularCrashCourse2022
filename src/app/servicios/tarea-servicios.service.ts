@@ -18,5 +18,9 @@ export class TareaServiciosService {
     const url=`${this.apliTareas}/${tarea.id}`;
     return this.Http.delete<Tarea>(url);
   }
+  recordatorio(tarea:Tarea):Observable<Tarea>{
+    const url=`${this.apliTareas}/${tarea.id}`;
+    return this.Http.put<Tarea>(url,tarea);
+  }
 
 }

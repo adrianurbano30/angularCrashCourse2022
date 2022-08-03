@@ -3,13 +3,13 @@
     {
       "texto": "Cita Medica",
       "fecha": "15 abril 2022",
-      "recordatorio": false,
+      "recordatorio": true,
       "id": 1
     },
     {
       "texto": "Reunion de padres",
       "fecha": "15 abril 2022",
-      "recordatorio": false,
+      "recordatorio": true,
       "id": 2
     },
     {
@@ -17,6 +17,18 @@
       "fecha": "15 abril 2022",
       "recordatorio": false,
       "id": 3
+    },
+    {
+      "texto": "Dentista",
+      "fecha": "15 octubre 2022",
+      "recordatorio": true,
+      "id": 4
+    },
+    {
+      "texto": "Cobros",
+      "fecha": "15 abril 2022",
+      "recordatorio": false,
+      "id": 5
     }
   ]
 }

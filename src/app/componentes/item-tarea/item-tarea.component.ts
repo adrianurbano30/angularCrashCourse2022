@@ -11,12 +11,16 @@ export class ItemTareaComponent implements OnInit {
 
   @Input() tarea!:Tarea;
   @Output() eliminarTarea:EventEmitter<Tarea> = new EventEmitter();
+  @Output() recordar:EventEmitter<Tarea> = new EventEmitter();
   faCoffee = faTrash;
 
   constructor() { }
 
   eliminarItem(tarea:Tarea){
     this.eliminarTarea.emit(tarea);
+  }
+  recordatorio(tarea:Tarea){
+    this.recordar.emit(tarea);
   }
 
   ngOnInit(): void {

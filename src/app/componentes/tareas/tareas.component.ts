@@ -17,15 +17,26 @@ export class TareasComponent implements OnInit {
   Tareas:Tarea[] =[];
 
   ngOnInit(): void {
+    this.getTareas();
+  }
+
+  getTareas(){
     this.tareaServicio.obtenerTareas().subscribe((tareas)=>{
       this.Tareas = tareas
     });
   }
+
   eliminarTarea(tarea:Tarea){
     this.tareaServicio.eliminarTarea(tarea)
       .subscribe(
       ()=>(this.Tareas = this.Tareas.filter((t) => t.id !== tarea.id))
       );
+  }
+  recordar(tarea:Tarea){
+    tarea.recordatorio =!tarea.recordatorio;
+    this.tareaServicio.recordatorio(tarea).subscribe(()=>{
+      this.getTareas();
+    });
   }
 
 }

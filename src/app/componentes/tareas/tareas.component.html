@@ -1,6 +1,6 @@
 <div class="flex items-center justify-between">
   <div class="grid grid-cols-1 gap-2 w-full">
-    <app-item-tarea (eliminarTarea)="eliminarTarea($event)" *ngFor="let tarea of Tareas" [tarea]="tarea"></app-item-tarea>
+    <app-item-tarea  (eliminarTarea)="eliminarTarea($event)" (recordar)="recordar($event)" *ngFor="let tarea of Tareas" [tarea]="tarea"></app-item-tarea>
   </div>
 </div>
 
