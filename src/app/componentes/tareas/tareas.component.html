@@ -1,5 +1,6 @@
+<app-agregar-tarea (agregarTarea)="agregarTarea($event)"></app-agregar-tarea>
 <div class="flex items-center justify-between">
-  <div class="grid grid-cols-1 gap-2 w-full">
+  <div class="grid grid-cols-1 gap-2 w-full overflow-y-auto h-60">
     <app-item-tarea  (eliminarTarea)="eliminarTarea($event)" (recordar)="recordar($event)" *ngFor="let tarea of Tareas" [tarea]="tarea"></app-item-tarea>
   </div>
 </div>

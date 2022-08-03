@@ -1,0 +1,28 @@
+<div class="w-full max-w-xs">
+  <form (ngSubmit)="agregarT()" class="bg-white shadow-md rounded px-8 pt-4 pb-4 mb-2">
+    <div class="mb-2">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="texto">
+        Tarea
+      </label>
+      <input [(ngModel)]="tarea.texto" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="texto" name="texto" type="text" placeholder="agrega la tarea">
+    </div>
+    <div class="mb-2">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="fecha">
+        Fecha y hora
+      </label>
+      <input [(ngModel)]="tarea.fecha" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="fecha" id="fecha" type="text" placeholder="fecha y hora">
+    </div>
+    <div class="mb-2 flex items-center justify-between">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="recordatorio">
+        Recordatorio
+      </label>
+      <input [(ngModel)]="tarea.recordatorio" class="text-gray-600 text-lg" name="recordatorio" id="recordatorio" type="checkbox">
+    </div>
+    <div class="flex items-center justify-center">
+      <button class="bg-green-500 hover:bg-green-700 transition duration-700 text-white font-bold py-1 px-2 rounded focus:outline-none focus:shadow-outline w-full" type="submit">
+        Agregar Tarea
+      </button>
+    </div>
+  </form>
+
+</div>

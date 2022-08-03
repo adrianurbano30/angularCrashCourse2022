@@ -39,4 +39,10 @@ export class TareasComponent implements OnInit {
     });
   }
 
+  agregarTarea(tarea:Tarea){
+    this.tareaServicio.agregarTarea(tarea).subscribe((tarea)=>{
+      this.Tareas.push(tarea);
+    });
+  }
+
 }

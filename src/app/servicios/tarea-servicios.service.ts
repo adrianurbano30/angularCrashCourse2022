@@ -22,5 +22,8 @@ export class TareaServiciosService {
     const url=`${this.apliTareas}/${tarea.id}`;
     return this.Http.put<Tarea>(url,tarea);
   }
+  agregarTarea(tarea:Tarea):Observable<Tarea>{
+    return this.Http.post<Tarea>(this.apliTareas,tarea);
+  }
 
 }

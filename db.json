@@ -3,13 +3,13 @@
     {
       "texto": "Cita Medica",
       "fecha": "15 abril 2022",
-      "recordatorio": true,
+      "recordatorio": false,
       "id": 1
     },
     {
       "texto": "Reunion de padres",
       "fecha": "15 abril 2022",
-      "recordatorio": true,
+      "recordatorio": false,
       "id": 2
     },
     {
@@ -19,16 +19,28 @@
       "id": 3
     },
     {
-      "texto": "Dentista",
-      "fecha": "15 octubre 2022",
-      "recordatorio": true,
+      "texto": "chatiar todo el dia",
+      "fecha": "ya",
+      "recordatorio": false,
       "id": 4
     },
     {
-      "texto": "Cobros",
-      "fecha": "15 abril 2022",
+      "texto": "no joder a nadie",
+      "fecha": "tal vez mañana a las 5 pm",
       "recordatorio": false,
       "id": 5
+    },
+    {
+      "texto": "dar paz al mundo",
+      "fecha": "5 de agosto a las 2 pm",
+      "recordatorio": true,
+      "id": 6
+    },
+    {
+      "texto": "visitar a la abuela",
+      "fecha": "quien sabe",
+      "recordatorio": false,
+      "id": 7
     }
   ]
 }

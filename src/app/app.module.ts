@@ -8,6 +8,8 @@ import { ButtonComponent } from './componentes/button/button.component';
 import { TareasComponent } from './componentes/tareas/tareas.component';
 import { ItemTareaComponent } from './componentes/item-tarea/item-tarea.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AgregarTareaComponent } from './componentes/agregar-tarea/agregar-tarea.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     ButtonComponent,
     TareasComponent,
-    ItemTareaComponent
+    ItemTareaComponent,
+    AgregarTareaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
