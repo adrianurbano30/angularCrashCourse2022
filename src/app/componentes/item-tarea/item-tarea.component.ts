@@ -1,5 +1,5 @@
 import { Tarea } from './../../interfaces/tarea';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -10,9 +10,14 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 export class ItemTareaComponent implements OnInit {
 
   @Input() tarea!:Tarea;
+  @Output() eliminarTarea:EventEmitter<Tarea> = new EventEmitter();
   faCoffee = faTrash;
 
   constructor() { }
+
+  eliminarItem(tarea:Tarea){
+    this.eliminarTarea.emit(tarea);
+  }
 
   ngOnInit(): void {
   }

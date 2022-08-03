@@ -1,6 +1,6 @@
 import { Tarea } from './../interfaces/tarea';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -13,6 +13,10 @@ export class TareaServiciosService {
 
   obtenerTareas():Observable<Tarea[]> {
     return this.Http.get<Tarea[]>(this.apliTareas);
+  }
+  eliminarTarea(tarea:Tarea):Observable<Tarea>{
+    const url=`${this.apliTareas}/${tarea.id}`;
+    return this.Http.delete<Tarea>(url);
   }
 
 }

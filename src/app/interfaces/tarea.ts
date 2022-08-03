@@ -1,5 +1,5 @@
 export interface Tarea{
-  Id?:number,
+  id?:number,
   texto:string,
   fecha:string,
   recordatorio:boolean

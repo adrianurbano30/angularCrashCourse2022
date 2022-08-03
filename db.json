@@ -4,20 +4,19 @@
       "texto": "Cita Medica",
       "fecha": "15 abril 2022",
       "recordatorio": false,
-      "Id": 1
+      "id": 1
     },
     {
       "texto": "Reunion de padres",
       "fecha": "15 abril 2022",
       "recordatorio": false,
-      "Id": 2
+      "id": 2
     },
     {
       "texto": "Mercar",
       "fecha": "15 abril 2022",
       "recordatorio": false,
-      "Id": 3
+      "id": 3
     }
-
   ]
 }

@@ -21,5 +21,11 @@ export class TareasComponent implements OnInit {
       this.Tareas = tareas
     });
   }
+  eliminarTarea(tarea:Tarea){
+    this.tareaServicio.eliminarTarea(tarea)
+      .subscribe(
+      ()=>(this.Tareas = this.Tareas.filter((t) => t.id !== tarea.id))
+      );
+  }
 
 }
