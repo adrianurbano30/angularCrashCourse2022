@@ -12,7 +12,9 @@ export class TareasComponent implements OnInit {
 
 
 
-  constructor(private tareaServicio:TareaServiciosService) { }
+  constructor(private tareaServicio:TareaServiciosService) {
+
+  }
 
   Tareas:Tarea[] =[];
 

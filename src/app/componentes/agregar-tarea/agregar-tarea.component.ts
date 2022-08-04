@@ -1,5 +1,7 @@
 import { Tarea } from './../../interfaces/tarea';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { UiService } from 'src/app/servicios/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-agregar-tarea',
@@ -15,8 +17,14 @@ export class AgregarTareaComponent implements OnInit {
     fecha:'',
     recordatorio:false
   }
+  mostrarOnoAgregarTarea!:boolean;
+  subscripcion = Subscription;
 
-  constructor() { }
+  constructor(private uisvc:UiService) {
+    this.uisvc.enCambio().subscribe((valor)=>{
+      this.mostrarOnoAgregarTarea = valor;
+    });
+  }
 
   agregarT(){
 
@@ -25,6 +33,8 @@ export class AgregarTareaComponent implements OnInit {
     }
 
     this.agregarTarea.emit(this.tarea);
+    this.uisvc.mostrarOnoAgregarTarea();
+
     this.tarea.texto='';
     this.tarea.fecha='';
     this.tarea.recordatorio=false;

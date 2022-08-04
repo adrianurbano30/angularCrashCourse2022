@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { UiService } from 'src/app/servicios/ui.service';
 
 @Component({
   selector: 'app-header',
@@ -8,14 +10,20 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   titulo:string='MIS TAREAS';
+  mostrarTareas:boolean=false;
+  subscription!:Subscription;
 
-  constructor() { }
+  constructor(private uisvc:UiService) {
+    this.subscription = this.uisvc.enCambio().subscribe((valor)=>{
+      this.mostrarTareas = valor;
+    });
+  }
 
   ngOnInit(): void {
   }
 
   agregarQuitarTarea(){
-    console.log('agregar o quitar tarea');
+    this.uisvc.mostrarOnoAgregarTarea();
   }
 
 }

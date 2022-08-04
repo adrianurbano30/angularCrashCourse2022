@@ -9,7 +9,7 @@
     {
       "texto": "Reunion de padres",
       "fecha": "15 abril 2022",
-      "recordatorio": false,
+      "recordatorio": true,
       "id": 2
     },
     {
@@ -39,8 +39,14 @@
     {
       "texto": "visitar a la abuela",
       "fecha": "quien sabe",
-      "recordatorio": false,
+      "recordatorio": true,
       "id": 7
+    },
+    {
+      "texto": "se hizo lo que debia",
+      "fecha": "la hora exacta",
+      "recordatorio": true,
+      "id": 8
     }
   ]
 }
