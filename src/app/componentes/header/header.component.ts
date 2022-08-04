@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { UiService } from 'src/app/servicios/ui.service';
 
@@ -13,7 +14,7 @@ export class HeaderComponent implements OnInit {
   mostrarTareas:boolean=false;
   subscription!:Subscription;
 
-  constructor(private uisvc:UiService) {
+  constructor(private uisvc:UiService,private ruta:Router) {
     this.subscription = this.uisvc.enCambio().subscribe((valor)=>{
       this.mostrarTareas = valor;
     });
@@ -24,6 +25,10 @@ export class HeaderComponent implements OnInit {
 
   agregarQuitarTarea(){
     this.uisvc.mostrarOnoAgregarTarea();
+  }
+
+  hasRoute(ruta:string){
+    return this.ruta.url===ruta;
   }
 
 }

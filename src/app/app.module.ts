@@ -10,6 +10,8 @@ import { ItemTareaComponent } from './componentes/item-tarea/item-tarea.componen
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AgregarTareaComponent } from './componentes/agregar-tarea/agregar-tarea.component';
 import { FormsModule } from '@angular/forms';
+import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     ButtonComponent,
     TareasComponent,
     ItemTareaComponent,
-    AgregarTareaComponent
+    AgregarTareaComponent,
+    AcercaDeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
