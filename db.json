@@ -3,13 +3,13 @@
     {
       "texto": "Cita Medica",
       "fecha": "15 abril 2022",
-      "recordatorio": false,
+      "recordatorio": true,
       "id": 1
     },
     {
       "texto": "Reunion de padres",
       "fecha": "15 abril 2022",
-      "recordatorio": true,
+      "recordatorio": false,
       "id": 2
     },
     {
@@ -33,19 +33,19 @@
     {
       "texto": "dar paz al mundo",
       "fecha": "5 de agosto a las 2 pm",
-      "recordatorio": true,
+      "recordatorio": false,
       "id": 6
     },
     {
       "texto": "visitar a la abuela",
       "fecha": "quien sabe",
-      "recordatorio": true,
+      "recordatorio": false,
       "id": 7
     },
     {
       "texto": "se hizo lo que debia",
       "fecha": "la hora exacta",
-      "recordatorio": true,
+      "recordatorio": false,
       "id": 8
     }
   ]
